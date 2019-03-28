@@ -1,7 +1,13 @@
 const input = document.getElementById('input');
 const output = document.getElementById('output');
 
-const welcome = 'Welcome!';
+// console.log(nlp);
+
+const welcome = `
+    www @ borbely.info
+`;
+
+
 
 const wArr = Array.from(welcome);
 
@@ -15,7 +21,7 @@ const tracker = setInterval(() => {
         output.textContent += wArr[i];
     }
     i++;
-}, 200);
+}, 50);
 
 input.value = null;
 const _input = [];
@@ -24,8 +30,13 @@ input.addEventListener('keyup', event => {
 
     switch (event.key) {
         case 'Enter':
+
+            understand(input.value);
+
             output.innerHTML += ` <br> `;
-            output.innerHTML += input.value;
+            output.innerHTML += `&nbsp;&nbsp;&nbsp;&nbsp;`;
+            // output.innerHTML += input.value;
+            output.innerHTML += understand(input.value);
             input.value = null;
         case 'Backspace':
             output.textContent.length--;
@@ -44,26 +55,18 @@ input.addEventListener('keyup', event => {
 
 });
 
-
-// works but changing it
-// input.addEventListener('keyup', event => {
-
-//     switch (event.key) {
-//         case 'Enter':
-//             input.value = null;
-//             output.innerHTML += ` <br> `;
-//         case 'Backspace':
-//             output.textContent.length--;
-//         case 'Shift':
-//         case 'Control':
-//         case 'Alt':
-//         case 'Meta':
-//             console.log('UnBound', event.key);
-//             break;
-//         default:
-//             _input.push(event.key);
-//             output.innerHTML += event.key;
-//     }
+function understand(str) {
+    // console.log(str);
+    const doc = nlp(str);
+    console.log(doc);
+    return nlp(str).out('text');
+}
 
 
-// });
+
+const int = setInterval(() => {
+    if (typeof addMore !== undefined) {
+        clearInterval(int);
+        addMore();
+    }
+}, 1000);

@@ -1,11 +1,23 @@
+html {
+    background: rgb(20, 56, 147) url(noise.png);
+}
+body {
+    background: rgba(0, 0, 0, .05);
+    width: 100vw;
+    height:100vh;
+    margin:0;
+}
+
+
+
 input,
 output,
 #output {
     display: block;
-    border:none;
-    background: rgba(0,0,0,.05);
+    border: none;
+    background: rgba(0, 0, 0, .001);
     font-family: monospace;
-    color: black;
+    color: lightgrey;
     letter-spacing: 1px;
     font-size: 14px;
     padding: 1rem;
