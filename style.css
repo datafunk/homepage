@@ -1,0 +1,15 @@
+input,
+output,
+#output {
+    display: block;
+    border:none;
+    background: rgba(0,0,0,.05);
+    font-family: monospace;
+    color: black;
+    letter-spacing: 1px;
+    font-size: 14px;
+    padding: 0 1rem;
+    margin: 1px 1rem;
+    width: calc(100% - 4rem);
+    outline: none;
+}
