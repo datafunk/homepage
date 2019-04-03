@@ -4,7 +4,9 @@ const output = document.getElementById('output');
 // console.log(nlp);
 
 const welcome = `
-    www @ borbely.info
+borbely.info
+
+HTTP:418
 `;
 
 
@@ -21,7 +23,7 @@ const tracker = setInterval(() => {
         output.textContent += wArr[i];
     }
     i++;
-}, 50);
+}, 100);
 
 input.value = null;
 const _input = [];
@@ -33,10 +35,11 @@ input.addEventListener('keyup', event => {
 
             understand(input.value);
 
-            output.innerHTML += ` <br> `;
-            output.innerHTML += `&nbsp;&nbsp;&nbsp;&nbsp;`;
+            // output.innerHTML += ` <br> `;
+            // output.innerHTML += `&nbsp;&nbsp;&nbsp;&nbsp;`;
             // output.innerHTML += input.value;
-            output.innerHTML += understand(input.value);
+            output.textContent += `\n${understand(input.value)}`
+            // output.innerHTML += understand(input.value);
             input.value = null;
         case 'Backspace':
             output.textContent.length--;
@@ -56,17 +59,23 @@ input.addEventListener('keyup', event => {
 });
 
 function understand(str) {
-    // console.log(str);
-    const doc = nlp(str);
-    console.log(doc);
-    return nlp(str).out('text');
+    // // console.log(str);
+    // const doc = nlp(str);
+    // console.log(doc);
+    // return nlp(str).out('text');
+
+    if(str === 'about'){
+        document.location.pathname = 'about';
+    } else {
+        return nlp(str).out('text');
+    }
 }
 
 
 
-const int = setInterval(() => {
-    if (typeof addMore !== undefined) {
-        clearInterval(int);
-        addMore();
-    }
-}, 1000);
+// const int = setInterval(() => {
+//     if (typeof addMore !== undefined) {
+//         clearInterval(int);
+//         addMore();
+//     }
+// }, 1500);
