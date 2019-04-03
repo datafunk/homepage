@@ -1,21 +1,62 @@
-<!doctype html>
-<html land="en">
+
+<!DOCTYPE html>
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>borbely.info</title>
-    <style>
-        html { background: rgb(20, 56, 147) url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkAgMAAAANjH3HAAAACVBMVEVoaGgKCgrHx8dOQj4MAAAAA3RSTlMJCQldufy8AAAGT0lEQVRIx32Wy27aQBiFz1hja+zV2BojzMpGBkGeYmzZCFjZyERpVk5kUNKnsBFEpCtcAQpdQUWqtk/ZSlXvTdcz0vyXc74z8OjEn7Jk0fpQZJw4766Y/XxMM1JB5W7SmwD1bBwZQi2jd/clRrNhhTjow9AMXfKlc4tgCGgU5fJpjO3QDxQet+NkxbzP8ziAeXguq+trrOzRpsbt8lVEWHPjVPzc0glaF0sM3eLD8mZUXtqtvOFFhXOrdNoykRNIxkbLo7sQ4duNKn2PsIuKFRpStPUeDeg2uHt8G/fkta20FUmg4xW8IxNDn5rGSSw/rEegi30NMy+HSB57EQtW+Zgot2nXrqhNS28MOgQ4tuE11LC1M7w91tw9rMu9uI7wnEbzQGzAN6/tN6fczRba+G4gnlS8d3JWKfrTWr+Jz/GG9rmeGHq0XwFyYY8y2TNwKYzyYUAs1xXy2dLRopwvuZRRc37T34aucDaDbS1bfbw+1Imk8/vcvdxXcaKpLBg9HGKbgTziUJZ7RCOXZSFbEbecChIpHMWh91BR6lHOTc15Gs/4WtUK89kH1VT2prh38tuFDsU02iZYGVPqgt9cWaV82o5WeaAGLpuUxHK25GaOhog3GDusSkKfn/bLeykHRhtTCfUVU1VCwpZbgtNTMtn0rrJ782n3n04x7F0OaHqKCl40ZWklmzkpY1Z18FG8tXzflUIVmP7aAlIppEdC2hyq60TxHqdvriKLZ5zAzcwAORSf0aJmjUVz2dSZK1YMa3oiPSq4Lw3avwhGlHyeqE3hGBhuBBfLlgspeaBuPwaTj0LUFB0kLbu+MUQZjVoGvHhS+LJ5aqQIAUxMEjHx9RD+q0mtrEhudt/lwHWEeEFcnQk7E3nTJzSzznLesvGWKEFxUieBrsGMq9i6zgLQxwlDbx2hTQTn1ZSfgo6blRl/L3GXwOfap6HIk+KCBL/NA/VLUkSy/jCo91rP3cDj7z2ONU1kqGYhrMGiZGl20LnWi7eSV4/kyTSC4wbsbgFIaxWM5ekmPQ9us0vtJEOeQyLEtOGmlZET/zgwE3nJnyMzAmL+whQA0zvIRiP/a+uQMnlYu6Ckl4mz0bBb0bwT568FBd1NvXp/NkkmyHCHQpu96UjmNoEmD1gSbqTrBDuvP+LE845BfhQZKAvEox0K9+HTwaYYzPeKen8npoAtg/vSy5QTq/dl7W397luVHL/uE2mk7ZStOBR5kzdFu1+fZ9Ub5oPhH4yQUin0CRqSn2VH9jrWdeMVGVE1WkWwc5vgn8odLd8SfMeZasum8NRuayYy1+PWFPF6SMpu9BA3bXRTPA+y9mep0xDYOhNrW8OyWrRhkF/YiV8flWby04LYvOoF2SYMSprmabTfcUna2QLUhzJhgzE/KN3GeCoGhTkC0bXT1ecGyjQZS6VaLBLqaVclnwCkgut1QfAS/F5gi3Cxmky5oZT2Sjl6dRmtmcr70SLiHn6ibi8nAUm9FOqVKhMKbk2zh8H1JlKTRG1nZOPsezu4ZQ4mQ+MYOqQU0hlZzXHiRKFoq3dX+NtSQt4n/WCEl9Yj8UdO8LuSEAS0MUFvQkz/rvd32uCCio7P7cIVgqq/GgO6ljdpsrayp5HL/caYT32+yYm4wkuNZqDBw9w6RG0SHOj9SJD3u/DDubyVXZSMkpH3Rjk0LRvEeaCexWLIY4T4ENzNkijnf5XyQ5IuV/2HnlHkwwx03uTglAezC559VlU/gB5Og200oCQ549Mnt7nRn5ie0+gtVpG7TiymplLAket3sHa7HTH6XfcqfyhKjDOVDsEx3Lkl0XG0hD70nF5YsKdX/SzFt4ZF2nmOfr+EZcbtZT+lKaB6XMhKnoZQ4l0fDYP8+yOAb4JU1L+SHUVuthUSGalb/2HzIJHqxFSuyzhFquVbjbjDIVsSC31ltRrUzmN61VoRFiwKdEfyog6XKIZFWiXKjBvZLLw4YxO5qNpBt8Cf6UaZl+0ipTziB4X/BBB4S8x4ZxthprTvML68zGjv/FTdLPCPhONyaQ7r3+JD87U86msLKbU3J9z0mLvi5zNJ9N/FD09bg/9rsZAf2b8HhJ/c/aMWEPcFB6HJ1bCeJ9dOZjapUan6iH6LcoRLv4q0lRPpM/M3uSBcz8o2Zd1bt7Nq1L8Q8gtneUVUYqaCPQAAAABJRU5ErkJggg==); } body { background: rgba(0, 0, 0, .001); width: 100vw; margin:0; }
-        input, #output { display: block; border: none; background: rgba(0, 0, 0, .001); font-family: monospace; color: lightgrey; letter-spacing: 1px; font-size: 14px; padding: 1rem; margin: 1px 1rem; width: calc(90% - 4rem); outline: none; }
-    </style>
+
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>datafunk.github.io</title>
+<meta name="description" content="Peter Borbely digital media consultant">
+<meta name="keywords" content="Peter Borbely, digital media consultant">
+<meta name="author" content="Peter Borbely @datafunk">
+
+<meta property="og:title" content="datafunk.github.io" />
+<meta property="og:description" content="Peter Borbely digital media consultant" />
+<meta property="og:type" content="website" />
+<meta property='og:image' content='./content/home/borbely.info.png'>
+<meta name='twitter:image' content='./content/home/borbely.info.png'>
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="datafunk.github.io">
+<meta name="twitter:creator" content="@datafunk">
+<meta name="twitter:title" content="datafunk.github.io">
+<meta name="twitter:description" content="Peter Borbely digital media consultant">
+
+<meta name="google-site-verification" content="6pGD4HYNCPtOe85xvaPPsYJQB-zoZSy4b4ZahPpH4bk" />
+
+
+<style type="text/css">
+	#animated-background{
+		width: 100%;
+		height: 100%;
+		margin:0;
+		padding:0;
+ }
+</style>
+
+<link rel="stylesheet" href="./assets/all.min.css">
+
 </head>
-
 <body>
-    <pre id="output">
-borbely.info
+    <header class="header absolute top-0 left-0">
+        <div class="logo absolute block h3 m0 caps bold">
+            borbely.info
+        </div>
 
-The site is currently undergoing maintenance.
-Your browser may temporarily displays a "Not Secure" message in the address bar.
-    </pre>
+	<section id="hero">
+		<div id="large-header" class="large-header bg-blue m0" style="height: 377px;background-image:url(./assets/noise.png); background-color: #143893">
+			<canvas id="animated-background"></canvas>
+			<div class="hero-title absolute m0 center caps">
+                <p>
+					borbely.info
+                </p>
+            </div>
+		</div>
+	</section>
+
+
+<script src="./assets/main.min.js"></script>
+<script src="./assets/home.min.js"></script>
+
 </body>
 </html>
