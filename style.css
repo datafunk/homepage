@@ -9,12 +9,13 @@ body {
 }
 
 
-
+noscript,
 input,
 output,
 #output {
     display: block;
     border: none;
+    /* border: 1px solid red; */
     background: rgba(0, 0, 0, .001);
     font-family: monospace;
     color: lightgrey;
@@ -23,6 +24,7 @@ output,
     padding: 1rem;
     margin: 1px 1rem;
     width: calc(100% - 4rem);
+    width: 80%;
     outline: none;
 }
 

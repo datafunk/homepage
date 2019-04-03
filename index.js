@@ -4,9 +4,12 @@ const output = document.getElementById('output');
 // console.log(nlp);
 
 const welcome = `
-borbely.info
+borbely.info: 418
 
-HTTP:418
+The site is currently undergoing maintenance
+and displays a "Not Secure" message in the 
+address bar.
+The error is expected to be rectified by the 5th April 2019.
 `;
 
 
